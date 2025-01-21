@@ -1,0 +1,178 @@
+@font-face {
+    font-family: "Rudy";
+    src: url(/Fonts/Ruda-VariableFont_wght.ttf) format('truetype');
+}
+@font-face {
+    font-family: "Space Grotesk";
+    src: url(/Fonts/SpaceGrotesk-VariableFont_wght.ttf) format('truetype');
+}
+@font-face {
+    font-family: "Kaushan";
+    src: url(/Fonts/KaushanScript-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: "Philosopher";
+    src: url(/Fonts/Philosopher-Regular.ttf) format('truetype');
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Modifications */
+    .active{
+        font-weight: normal !important;
+        color: #5f5f5f !important; 
+    }
+ 
+    h1{
+        font-family: "Philosopher";
+        font-size: 4em;
+    }
+    h2{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.2em;
+    }
+    .cfs-10{
+        font-size: 0.9em;
+    }
+    .cExplainer{
+        font-size: 1em;
+        font-weight: normal;
+        font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: rgb(148, 148, 148);
+        max-width: 800px;
+    }
+/* Modifications */
+
+nav{
+    border-top: 4px solid #6b6b6b;
+}
+.navbar { 
+    background: transparent;
+     transform: translateY(-100%);
+     transition: transform 0.5s ease-in-out;
+} 
+.navbar.show { 
+    transform: translateY(0);
+}
+.nav-link{
+    font-family: "Philosopher";
+    font-size: 1.1em;
+    padding-bottom: 10px;
+    color: #5f5f5f !important
+}
+.nav-link:after, .nav-link:before{
+        display: block;
+        content: '';
+        border-bottom: solid 2px #1000a0;  
+        transform: scaleX(0);  
+        transition: transform 0.45s ease-in-out;
+}
+.nav-link:hover:after{ 
+    transform: scaleX(1); 
+}
+.navbar-brand{
+    text-decoration: underline;
+    padding: none;
+    font-family: "Philosopher";
+}
+.navbar-brand:hover{
+    text-decoration: none;
+}
+.hero{
+    background-image: url(assets/heroimg.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    opacity: 0;
+    transition: opacity 0.75s ease;
+}
+.hero.show-hero{
+    transform: translateX(0%);
+    opacity: 1;
+}
+.subHero{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(assets/subherobg.jpg);
+}
+.subHero p, .subHero h2{
+    font-family: "Rudy";
+}
+.subHero h3{
+    font-family: "Space Grotesk";
+    
+}
+.subHero h2{
+    letter-spacing: -4px;
+    font-size: 3em;
+}
+.v-hero{
+    min-height: 100vh;  
+}
+.v-hero img{
+    transform: scale(0.8);
+}
+.s-hero{
+    min-height: 100vh;
+    background-image: url(assets/skillsbg.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.s-hero h3{
+    font-family: "Rudy";
+}
+.s-hero .card{
+    min-width: 10rem;
+    cursor: pointer;
+    min-height: 400px;
+    transition: transform 0.5S ease;
+}
+.s-hero .card:hover{
+    transform: scale(1.05);
+}
+.js-card{
+    border: 1px solid rgb(202, 189, 0);
+}
+.bs-card{
+    border: rgb(145, 7, 236) 1px solid;
+}
+.css-card{
+    border: rgb(73, 122, 255) 1px solid;
+}
+.html-card{
+    border: rgb(212, 85, 0) 1px solid;
+}
+.i-hero img{
+    /* max-width: 400px; */
+    max-height: 400px;
+}
+.p-hero{
+    min-height: 100vh;
+    background-image: url(assets/projectbg.jfif);
+    background-size: contain;
+}
+footer{
+    min-height: 20vh;
+    background: #3d3d3d;
+    color: white;
+    padding: 20px;
+}
+footer .container{
+    height: 100%;
+}
+@media(max-width: 768px){
+    .nav-link:hover:after{ 
+        transform: scaleX(0); 
+    }
+    .nav-link:hover{
+        color: #959595 !important;
+    }
+}
+@media(max-width: 576px){
+
+}
+@media(max-width: 480px){
+
+}
+@media(max-width: 320px){
+
+}
