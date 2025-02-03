@@ -155,13 +155,13 @@ nav{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Translucent dark color */
+    background-color: rgba(0, 0, 0, 0.85); /* Translucent dark color */
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: opacity 1s ease;
 }
 
 .project:hover .overlay {
@@ -187,24 +187,24 @@ nav{
 }
 
 
-.project .overlay {
+/* .project .overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.85); /* Translucent dark color */
-    color: white;
+    /* color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     opacity: 0;
     transition: opacity 0.3s ease;
-}
+} */
 
-.project:hover .overlay {
+/* .project:hover .overlay {
     opacity: 1;
-}
+} */ */
 
 .text {
     font-size: 20px; /* Adjust the font size as needed */
