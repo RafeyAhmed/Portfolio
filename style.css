@@ -229,7 +229,10 @@ footer .container{
     }
 }
 @media(max-width: 576px){
-
+    .card{
+        max-width: 18rem;
+        justify-self: center;
+    }
 }
 @media(max-width: 480px){
 
